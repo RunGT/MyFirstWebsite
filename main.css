@@ -1,8 +1,30 @@
-h2 {
-    background-color: #56c7ff;
-    color: rgb(247, 202, 248);
-    padding: 10px;
+/* Colour palette F4ACB7 dusty pink
+                  7A9CC6 blue-ish
+                  9684A1 lavender
+                  99EDCC pastel green
+                  D8DBE2 grey */
+
+body {
+  background: #d8dbe2;
+  font-family: "Lato";
 }
-.title {
-    font-size: 65px;
-  }
+
+.banner {
+  /* second font is my back up font incase Montserrat doesn't load */
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  background: #99edcc;
+  padding: 1rem;
+  color: #cc8cf3;
+}
+
+h2 {
+  background-color: #7a9cc6;
+  color: white;
+  padding: 10px;
+}
+
+img {
+  width: 100vw;
+  height: auto;
+}
