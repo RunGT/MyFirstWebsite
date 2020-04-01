@@ -7,10 +7,33 @@
 body {
   background: #d8dbe2;
   font-family: "Lato";
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  background: #f4acb7;
+  text-align: left;
+  text-indent: 0.5rem;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: ;
+}
+/* styling for link colours */
+a:link {
+  color: rgb(153, 114, 243);
+}
+a:visited {
+  color: ;
+} /* May change visted colour */
+a:hover {
+  color: hotpink;
 }
 
+ul li {
+  background: #dfcfe9;
+}
 .banner {
-  /* second font is my back up font incase Montserrat doesn't load */
+  /* second font is a back up, incase Montserrat doesn't load */
   font-family: "Montserrat", sans-serif;
   font-size: 3em;
   background: #99edcc;
