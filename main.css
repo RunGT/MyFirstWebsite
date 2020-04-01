@@ -39,15 +39,18 @@ ul li {
   background: #99edcc;
   padding: 1rem;
   color: #cc8cf3;
+  background: linear-gradient(to bottom right, #99edcc, #47d8fc);
 }
 
-h2 {
+.planetbanner {
   background-color: #7a9cc6;
   color: white;
-  padding: 10px;
+  padding: 5px;
+  background: linear-gradient(#7a9cc6, #cc8cf3dc); /* fade */
 }
 
-img {
+.GTdive {
   width: 100vw;
   height: auto;
 }
+
