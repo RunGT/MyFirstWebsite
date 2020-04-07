@@ -8,6 +8,8 @@ body {
   background: #d8dbe2;
   font-family: "Lato";
   text-align: center;
+  scroll-behavior: smooth;
+  display: block;
 }
 ul {
   list-style-type: none;
@@ -35,7 +37,7 @@ ul li {
 .banner {
   /* second font is a back up, incase Montserrat doesn't load */
   font-family: "Montserrat", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   background: #99edcc;
   padding: 1rem;
   color: #cc8cf3;
@@ -45,12 +47,17 @@ ul li {
 .planetbanner {
   background-color: #7a9cc6;
   color: white;
-  padding: 5px;
+  padding: 0.3rem;
   background: linear-gradient(#7a9cc6, #cc8cf3dc); /* fade */
 }
 
-.GTdive {
+.planetbanner:hover {
+  background-color: red;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.GTdiveimg {
   width: 100vw;
   height: auto;
 }
-
