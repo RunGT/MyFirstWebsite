@@ -3,7 +3,30 @@
                   9684A1 lavender
                   99EDCC pastel green
                   D8DBE2 grey */
-
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+nav {
+  position: absolute;
+  top: 73%;
+  text-align: left;
+  left: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  color: aliceblue;
+  text-transform: uppercase;
+}
 body {
   background: #d8dbe2;
   font-family: "Lato";
@@ -14,7 +37,7 @@ body {
 ul {
   list-style-type: none;
   background: #f4acb7;
-  text-align: left;
+  /*text-align: left; */
   text-indent: 0.5rem;
   text-decoration: none;
   padding: 20px;
@@ -35,11 +58,11 @@ ul li {
   background: #dfcfe9;
 }
 .banner {
-  /* second font is a back up, incase Montserrat doesn't load */
+  /* Styling for main banner. Second font is a back up, incase Montserrat doesn't load */
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   background: #99edcc;
-  padding: 1rem;
+  padding: 0rem;
   color: #cc8cf3;
   background: linear-gradient(to bottom right, #99edcc, #47d8fc);
 }
