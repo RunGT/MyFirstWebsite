@@ -11,14 +11,11 @@ header {
   position: fixed;
   width: 100%;
   background: var(--title);
-}
-nav {
-  position: absolute;
-  top: 73%;
-  text-align: left;
+  font-size: 0rem;
+  top: 0%;
   left: 0;
-  background: var(--title);
 }
+
 nav ul {
   list-style: none;
   padding: 0%;
@@ -32,6 +29,7 @@ nav a {
   color: aliceblue;
   text-transform: uppercase;
   font-size: 1rem;
+  text-decoration: none;
 }
 nav a:hover {
   color: #f4acb7;
@@ -42,11 +40,12 @@ body {
   text-align: center;
   scroll-behavior: smooth;
   display: block;
+  padding-top: 120px;
 }
 ul {
   list-style-type: none;
   /* background: #f4acb7; */
-  /*text-align: left; */
+  text-align: left;
   text-indent: 0.5rem;
   text-decoration: none;
   padding: 20px;
