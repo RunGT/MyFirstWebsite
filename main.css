@@ -4,18 +4,67 @@
                   99EDCC pastel green
                   D8DBE2 grey */
 :root {
-  --title: rgba(153, 237, 204, 1);
+  --title: rgba(153, 237, 204, 0.9);
 }
+
+/* Nav bar transitions and styling */
 header {
   text-align: center;
   position: fixed;
   width: 100%;
   background: var(--title);
-  font-size: 0rem;
+  /* font-size: 0rem; */
   top: 0%;
   left: 0;
+  z-index: 999;
 }
-
+/* Makes the checkbox dissapear but I still have use of it for the menu */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  background: var(--title);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
 nav ul {
   list-style: none;
   padding: 0%;
