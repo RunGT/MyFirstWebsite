@@ -3,17 +3,97 @@
                   9684A1 lavender
                   99EDCC pastel green
                   D8DBE2 grey */
+:root {
+  --title: rgba(153, 237, 204, 0.9);
+}
 
+/* Nav bar transitions and styling */
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background: var(--title);
+  /* font-size: 0rem; */
+  top: 0%;
+  left: 0;
+  z-index: 999;
+}
+/* Makes the checkbox dissapear but I still have use of it for the menu */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  background: var(--title);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+nav ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  color: aliceblue;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #f4acb7;
+}
 body {
   background: #d8dbe2;
   font-family: "Lato";
   text-align: center;
   scroll-behavior: smooth;
   display: block;
+  padding-top: 120px;
 }
 ul {
   list-style-type: none;
-  background: #f4acb7;
+  /* background: #f4acb7; */
   text-align: left;
   text-indent: 0.5rem;
   text-decoration: none;
@@ -27,21 +107,17 @@ a:link {
 a:visited {
   color: ;
 } /* May change visted colour */
-a:hover {
-  color: hotpink;
-}
 
-ul li {
+/* ul li {
   background: #dfcfe9;
-}
+} */
 .banner {
-  /* second font is a back up, incase Montserrat doesn't load */
+  /* Styling for main banner. Second font is a back up, incase Montserrat doesn't load */
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  background: #99edcc;
-  padding: 1rem;
-  color: #cc8cf3;
-  background: linear-gradient(to bottom right, #99edcc, #47d8fc);
+  /* background: #99edcc; */
+  padding: 0rem;
+  color: #f4acb7;
 }
 
 .planetbanner {
