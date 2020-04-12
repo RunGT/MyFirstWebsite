@@ -18,9 +18,14 @@ header {
   left: 0;
   z-index: 999;
 }
-/* Makes the checkbox dissapear but I still have use of it for the menu */
+/* !important to insure the values below will be used*/
 .nav-toggle {
-  display: none;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
 }
 .nav-toggle-label {
   position: absolute;
@@ -62,9 +67,6 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
-}
 nav ul {
   list-style: none;
   padding: 0%;
@@ -79,10 +81,20 @@ nav a {
   text-transform: uppercase;
   font-size: 1rem;
   text-decoration: none;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
 }
 nav a:hover {
   color: #f4acb7;
 }
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
 body {
   background: #d8dbe2;
   font-family: "Lato";
