@@ -7,6 +7,11 @@
   --title: rgba(153, 237, 204, 0.9);
 }
 
+html {
+  background-image: url(images/double-bubble-outline.png);
+  box-sizing: border-box;
+}
+
 /* Nav bar transitions and styling */
 header {
   text-align: center;
@@ -85,7 +90,7 @@ nav a {
   transition: opacity 150ms ease-in-out;
 }
 nav a:hover {
-  color: #f4acb7;
+  color: #9684a1;
 }
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
@@ -142,10 +147,11 @@ nav a:hover {
     height: 5px;
     background: #9684a1;
     position: absolute;
-    top: -0.75em;
+    bottom: -0.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
+    transform-origin: left;
     transition: transform ease-in-out 250ms;
   }
 
@@ -154,8 +160,11 @@ nav a:hover {
   }
 }
 
+/* Nav bar desktop and mobile end */
+
 body {
-  background: #d8dbe2;
+  /* background: white; */
+
   font-family: "Lato";
   text-align: center;
   scroll-behavior: smooth;
@@ -204,6 +213,15 @@ a:visited {
   background-color: red;
   cursor: pointer;
   transition: background-color 0.5s ease;
+}
+/* Carousel Start */
+.carousel-container {
+  width: 60%;
+  margin: auto;
+}
+
+.pic-slides {
+  display: flex;
 }
 
 .GTdiveimg {
