@@ -175,12 +175,66 @@ nav a:hover {
 body {
   /* background: white; */
 
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   text-align: center;
   scroll-behavior: smooth;
   display: block;
   padding: 0px;
+  /* background-color: #000; */
+  color: #000;
 }
+/* Typed effect */
+.container {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4acb7;
+  padding: 0;
+}
+.container p {
+  font-size: 5rem;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: var(--title);
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+/* End of typed effect */
 ul {
   list-style-type: none;
   /* background: #f4acb7; */
