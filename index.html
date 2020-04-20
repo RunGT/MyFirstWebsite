@@ -71,12 +71,15 @@
       <br />
 
       <!-- Picture of me diving -->
+     
+    <div class="divingPic">
       <img
         class="GTdiveimg"
         src="images/Cyprus_Terry_diving.jpg"
         alt="Picture of me diving"
-        style="max-width: 100%;"
+        style="width: 50%;"
       />
+    </div>
       Feel free to click around :)
     </p>
 
@@ -90,7 +93,38 @@
     </div>
 
     <!-- Image Carousel start - find the right pictures for the slide -->
-    
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/photo-of-a-fish-on-corals-1522160.jpg" alt="Splash" />
+
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/brown-turquoise-on-clear-3264721.jpg" alt="diving" />
+
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/yellow-and-blue-fish-in-water-3220368.jpg" alt="" />
+
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <h4>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rem
