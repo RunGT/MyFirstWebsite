@@ -110,3 +110,21 @@ function plusSlides(n) {
     currentSlide(newslideIndex);
   }
 }
+document.addEventListener("keydown", keyManipulation);
+
+function keyManipulation(e) {
+  if (e.keyCode === 39) {
+    plusSlides(1);
+  }
+  if (e.keyCode === 37) {
+    plusSlides(-1);
+  }
+  if (e.keyCode === 32) {
+    if (playing == true) {
+      pauseSlideshow();
+    } else if (playing == false) {
+      playSlideshow();
+    }
+  }
+}
+
