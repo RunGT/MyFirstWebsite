@@ -77,10 +77,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // carousel slide
 
+
+// Carousel
+
+
 var slideIndex = 0;
 var slides = document.getElementsByClassName("mySlides");
+var interval;
+var pauseButton = document.getElementById("pause");
 
 showSlides();
+playSlideshow();
 
 function showSlides() {
   var i;
@@ -92,9 +99,8 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
-
+// Manual control 
 function currentSlide(no) {
   var i;
   for (i = 0; i < slides.length; i++) {
@@ -110,6 +116,33 @@ function plusSlides(n) {
     currentSlide(newslideIndex);
   }
 }
+// Pause
+
+var playing = true;
+
+function pauseSlideshow() {
+  var pauseButton = document.getElementById("pause");
+  pauseButton.innerHTML = "&#9656;";
+  playing = false;
+  clearInterval(interval);
+}
+
+function playSlideshow() {
+  pauseButton.innerHTML = "&#x23F8;";
+  playing = true;
+  interval = setInterval(showSlides, 5000);
+}
+
+pauseButton.onclick = function () {
+  if (playing) {
+    pauseSlideshow();
+  } else {
+    playSlideshow();
+  }
+};
+
+
+
 document.addEventListener("keydown", keyManipulation);
 
 function keyManipulation(e) {
