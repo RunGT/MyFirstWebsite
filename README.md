@@ -1,2 +1,2 @@
 # Myfirstwebsite
-Web site for founders and coders
+Website for founders and coders with link to Codewars, freeCodeCamp and GitHub at the bottom
