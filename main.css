@@ -248,10 +248,11 @@ ul {
 ul.links {
   list-style-type: none;
   background-color: #99EDCC;
-  text-align: center;
-  width: 100vw;
+  text-align: right;
+  width: 100%;
   bottom: 0px;
-  padding: 40px;
+  /* padding: 40px; */
+  
 }
 
 ul.links li {
@@ -269,22 +270,32 @@ a:link {
 a:visited {
   color: ;
 } /* May change visted colour */
+h2,
+h4 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+h4 {
+  text-align: left;
+  margin-left: 30px;
+  background-color: #f4acb7;
 
+}
 
-.planetbanner {
+/* .planetbanner {
   background-color: #7a9cc6;
   color: black;
   padding: 0.3rem;
   background: white; 
   width: 100%;
-}
+} */
 
 /* .planetbanner:hover {
   background-color: red;
   cursor: pointer;
   transition: background-color 0.5s ease;
 } */
-/* Carousel Start */
+/* Title Carousel Start */
 #carousel-container {
   /* width: 50%; */
   /*   */
@@ -345,8 +356,9 @@ h3 {
 .content {
   text-align: left;
   background-color: white;
-  font-size: large;
-  margin: 0.5rem;
+  font-size: 1.1rem;
+  margin: 0.3rem;
+  font-family: sans-serif;
   
 }
 
@@ -426,7 +438,7 @@ h3 {
 
 /* Caption text */
 .text {
-  color:black;
+  color:white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -447,7 +459,7 @@ h3 {
 
 /* The dots/bullets/indicators */
 
-.dot {
+/* .dot {
   top: 90%;
   cursor: pointer;
   height: 13px;
@@ -463,7 +475,7 @@ h3 {
 .active,
 .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
 .fade {
@@ -490,5 +502,10 @@ h3 {
     opacity: 1;
   }
 }
-
+.outro {
+  font-size: 1.1rem;
+  text-align: left;
+  font-family: sans-serif;
+  margin: 30px;
+}
 
