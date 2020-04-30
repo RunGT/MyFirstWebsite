@@ -12,7 +12,7 @@ html {
   box-sizing: border-box; */
 }
 
-/* Nav bar transitions and styling */
+/* Nav bar, transitions and styling */
 header {
   text-align: center;
   position: fixed;
@@ -242,7 +242,7 @@ ul {
   text-indent: 0.5rem;
   text-decoration: none;
   padding: 20px;
-  border-radius: ;
+  /* border-radius: ; */
 }
 
 ul.links {
@@ -261,15 +261,28 @@ ul.links {
 
 ul.links li {
   display: inline-block;
-  /* width: 3rem; */
+  
   padding-left: 1rem;
   padding-right: 1rem; 
   
 }
 
+@media screen and (max-width: 800px) {
+  .links {
+    /* background-color: white; */
+    margin-right: 40px;
+  }
+  ul.links li {
+    padding: 0px;
+    
+    
+    
+}
+}
+
 /* styling for link colours */
 a:link {
-  color: rgb(153, 114, 243);
+  /* color: rgb(153, 114, 243); */
 }
 a:visited {
   color: ;
@@ -430,7 +443,7 @@ h4 {
   right: 48.5%;
   color: white;
   /* font-weight: bold; */
-  font-size: 30px;
+  font-size: 1rem;
   border-radius: 50%;
   background: rgba(244, 172, 183, 0.5);
 }
@@ -453,10 +466,17 @@ h4 {
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+  .text {
+    display: none;
+  }
+
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: white;
-  font-size: 12px;
+  font-size: 1rem;
   padding: 8px 12px;
   position: absolute;
   top: 0;
