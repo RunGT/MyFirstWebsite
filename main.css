@@ -247,19 +247,23 @@ ul {
 
 ul.links {
   list-style-type: none;
-  background-color: #99EDCC;
-  text-align: right;
+  /* background-color: #99EDCC; */
+  text-align: center;
   width: 100%;
   bottom: 0px;
   /* padding: 40px; */
   
 }
 
+.links {
+  background-color: #99EDCC;
+}
+
 ul.links li {
   display: inline-block;
   /* width: 3rem; */
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 1rem; 
   
 }
 
@@ -275,10 +279,16 @@ h4 {
   text-align: center;
   font-size: 1.6rem;
 }
+h3 {
+  text-align: center;
+  background-color: white;
+}
 h4 {
-  text-align: left;
-  margin-left: 30px;
+  text-align: center;
+  margin: 10px;
   background-color: #f4acb7;
+  width: 100%;
+  border-radius: 50%;
 
 }
 
@@ -341,10 +351,7 @@ h4 {
   display: flex;
   position: relative;
 } */
-h3 {
-  text-align: center;
-  background-color: white;
-}
+
 .GTdiveimg {
   /* width: 100vw; */
   height: auto;
@@ -415,16 +422,16 @@ h3 {
 /* Pause css styles not working */
 .pause {
   cursor: pointer;
-  /* z-index: 3; */
+  z-index: 3;
   position: absolute;
-  top: 85%;
-  /* width: auto; */
+  top: 80%;
+  width: auto;
   padding: 9px;
-  /* right: 50%; */
+  right: 48.5%;
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 30px;
-  border-radius: 50px;
+  border-radius: 50%;
   background: rgba(244, 172, 183, 0.5);
 }
 
@@ -440,7 +447,6 @@ h3 {
 .text {
   color:white;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -506,6 +512,6 @@ h3 {
   font-size: 1.1rem;
   text-align: left;
   font-family: sans-serif;
-  margin: 30px;
+  margin: 0.3rem;
 }
 
