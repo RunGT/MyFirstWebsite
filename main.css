@@ -299,18 +299,18 @@ h2,
 h4 {
   text-align: center;
   font-size: 1.6rem;
+  margin: 10px;
+  background-color: #99EDCC;
+  width: 100%;
+  border-radius: 50%;
+
 }
 h3 {
   text-align: center;
   background-color: white;
 }
 h4 {
-  text-align: center;
-  margin: 10px;
   background-color: #f4acb7;
-  width: 100%;
-  border-radius: 50%;
-
 }
 
 /* .planetbanner {
@@ -440,6 +440,7 @@ h4 {
   left: 30px;
 }
 
+
 /* Pause css styles not working */
 .pause {
   cursor: pointer;
@@ -542,4 +543,16 @@ h4 {
   font-family: sans-serif;
   margin: 0.3rem;
 }
-
+/* Mobile screen carousel nav buttons */
+@media screen and (max-width: 800px) {
+  .prev,
+  .next {
+    font-size: 10px;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+  }
