@@ -126,6 +126,11 @@ nav a:hover {
   width: 100%;
 }
 
+a {
+  color: #f4acb7;
+  text-decoration: none;
+}
+
 /* Nav bar desktop and mobile end */
 
 /* Typed effect */
