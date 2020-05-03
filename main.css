@@ -6,18 +6,20 @@
 :root {
   --title: rgba(153, 237, 204, 1);
 }
-/* Allows an offset for my anchors/jump links */
+/* Allows an offset for my anchors/jump links so they are not obscured from view by the nav bar */
 :target {
   display: block;
   position: relative;
   top: -70px; /* my offset from Nav bar */
   visibility: hidden;
 }
+/* Apparently should stop left to right movement  */
+html,
+body {
+  overflow-x: hidden!important;
+  display: block;
+} 
 
-html {
-  /* background-image: url(images/double-bubble-outline.png);
-  box-sizing: border-box; */
-}
 
 /* Nav bar, transitions and styling */
 header {
@@ -191,7 +193,7 @@ body {
   /* padding: 0px; */
   /* background-color: #000; */
   color: #000;
-  position: relative;
+  /* position: relative; */
 }
 /* Typed effect */
 .container {
@@ -245,42 +247,42 @@ body {
 }
 
 /* End of typed effect */
-ul {
+/* ul {
   list-style-type: none;
-  /* background: #f4acb7; */
   text-align: left;
   text-indent: 0.5rem;
   text-decoration: none;
   padding: 20px;
-  /* border-radius: ; */
-}
+} */
 
-ul.links {
+/* ul.links {
   list-style-type: none;
-  /* background-color: #99EDCC; */
+  
   text-align: center;
   width: 100%;
   bottom: 0px;
-  /* padding: 40px; */
   
-}
+  
+} */
 
-.links {
+/* .links {
   background-color: #99EDCC;
-}
+} */
 
-ul.links li {
+/* ul.links li {
   display: inline-block;
   
   padding-left: 1rem;
   padding-right: 1rem; 
   
-}
+} */
 
-@media screen and (max-width: 800px) {
-  .links {
-    /* background-color: white; */
+/* background-color: white; */
     /* Keep an eye on this cause links to go wonky?? Check HTML is it the old image links class if so remove*/
+
+/* @media screen and (max-width: 800px) {
+  .links {
+    
     margin-right: 40px;   
   }
   ul.links li {
@@ -289,9 +291,9 @@ ul.links li {
     
     
 }
-}
+} */
 
-/* styling for link colours */
+/* styling for link colours NB delete  */
 a:link {
   /* color: rgb(153, 114, 243); */
 }
@@ -304,7 +306,7 @@ h4 {
   font-size: 1.6rem;
   /* margin: 10px; */
   background-color: #99EDCC;
-  width: 100vw;
+  width: 100%;
   border-radius: 50%;
   position: relative;
 
@@ -331,18 +333,6 @@ h4 {
   transition: background-color 0.5s ease;
 } */
 /* Title Carousel Start */
-#carousel-container {
-  /* width: 50%; */
-  /*   */
-
-  /* margin: auto; */
-  /* overflow: hidden; */
-  /* position: relative; */
-  /* box-sizing: border-box; */
-  /* top: 0px;
-  left: 0; */
-  
-}
 
 .pic-slides {
   display: flex;
@@ -389,7 +379,7 @@ h4 {
   text-align: left;
   background-color: white;
   font-size: 1.1rem;
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
   font-family: sans-serif;
   
 }
@@ -492,7 +482,7 @@ h4 {
 
 /* The dots/bullets/indicators */
 
-/* .dot {
+.dot {
   top: 90%;
   cursor: pointer;
   height: 13px;
@@ -508,7 +498,7 @@ h4 {
 .active,
 .dot:hover {
   background-color: #717171;
-} */
+}
 
 /* Fading animation */
 .fade {
