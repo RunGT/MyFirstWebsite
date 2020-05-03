@@ -13,13 +13,20 @@
   top: -70px; /* my offset from Nav bar */
   visibility: hidden;
 }
-/* Apparently should stop left to right movement  */
-html,
+/* Will stop left to right movement  */
+/* html,
 body {
   overflow-x: hidden!important;
   display: block;
-} 
-
+}  */
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+  display: block;
+  color: #000;
+  margin: 0;
+}
 
 /* Nav bar, transitions and styling */
 header {
@@ -121,8 +128,9 @@ nav a:hover {
     grid-column: 2 / 3;
   }
 
+
   nav {
-    /* all: unset; */
+    all: unset;
     position: relative;
     text-align: left;
     transition: none;
@@ -168,12 +176,13 @@ nav a:hover {
     transform: scale(1, 1);
   }
 }
+
 .banner {
   /* Styling for main banner. Second font is a back up, incase Montserrat doesn't load */
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   /* background: #99edcc; */
-  padding: 0rem;
+  /* padding: 0rem; */
   color: #f4acb7;
   /* changes position of "logo" */
   grid-column: 1 / 3;
@@ -182,19 +191,6 @@ nav a:hover {
 
 /* Nav bar desktop and mobile end */
 
-
-body {
-  /* background: white; */
-
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  scroll-behavior: smooth;
-  display: block;
-  /* padding: 0px; */
-  /* background-color: #000; */
-  color: #000;
-  /* position: relative; */
-}
 /* Typed effect */
 .container {
   height: 100vh;
@@ -294,12 +290,12 @@ body {
 } */
 
 /* styling for link colours NB delete  */
-a:link {
+/* a:link { */
   /* color: rgb(153, 114, 243); */
-}
-a:visited {
+/* } */
+/* a:visited {
   color: ;
-} /* May change visted colour */
+} May change visted colour */
 h2,
 h4 {
   text-align: center;
@@ -309,8 +305,8 @@ h4 {
   width: 100%;
   border-radius: 50%;
   position: relative;
-
 }
+
 h3 {
   text-align: center;
   background-color: white;
@@ -352,9 +348,8 @@ h4 {
   height: 100%;
   z-index: -1;
   object-fit: cover;
-  /* display: none; */
-  /* opacity: 0;
-  transition: opacity 0.75s ease-in-out; */
+  display: none;
+
 }
 
 /* .slideshow-img:first-child {
@@ -381,6 +376,7 @@ h4 {
   font-size: 1.1rem;
   /* margin: 0.3rem; */
   font-family: sans-serif;
+  margin: 0.5rem;
   
 }
 
@@ -482,7 +478,7 @@ h4 {
 
 /* The dots/bullets/indicators */
 
-.dot {
+/* .dot {
   top: 90%;
   cursor: pointer;
   height: 13px;
@@ -498,17 +494,17 @@ h4 {
 .active,
 .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
-.fade {
+/* .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
+} */
 
-@-webkit-keyframes fade {
+/* @-webkit-keyframes fade {
   from {
     display: block;
   }
@@ -524,7 +520,7 @@ h4 {
   to {
     opacity: 1;
   }
-}
+} */
 .outro {
   font-size: 1.1rem;
   text-align: left;
