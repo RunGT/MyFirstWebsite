@@ -112,9 +112,16 @@ function currentSlide(no) {
 
 function plusSlides(n) {
   var newslideIndex = slideIndex + n;
-  if (newslideIndex < 6 && newslideIndex > 0) {
+  //if (newslideIndex < 6 && newslideIndex > 0) {
+  //  currentSlide(newslideIndex);
+  //}
+  // * Changed so that the value is slides.length instead of 6. This means if I add a new image to the sider I do not have to update this code
+  // * Added a fail safe with an else statement. If any value falls out of the slides parameters it will have a default value of currentSlide(1) 
+  if (newslideIndex < slides.length && newslideIndex > 0) {
     currentSlide(newslideIndex);
-  }
+} else {
+    currentSlide(1);
+}
 }
 // Pause
 
